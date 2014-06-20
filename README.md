@@ -1,8 +1,8 @@
 tellyoumyip 0.1 beta
 
-this is a test util for ipaddress send/receive tool
-it is useful for get intranet gateway ipaddress. 
+this is a test util for ipaddress send/receive tool, it is useful for get intranet gateway ipaddress. 
 
+```
 Usage: tellyoumyip -m {client|server} [OPTIONS]
   -m <client|server> 	 run as a server or client mode. 
   -h <host> 		 server mode <host> is listen ipaddress, default 0.0.0.0 
@@ -17,4 +17,4 @@ Usage: tellyoumyip -m {client|server} [OPTIONS]
 Examples:
   tellyoumyip -m client -h 192.168.2.3 -L /var/log/tellyoumyip.client.log
   tellyoumyip -m server -P /var/run/tellyoumyip.pid -L /var/log/tellyoumyip.server.log
-
+```
