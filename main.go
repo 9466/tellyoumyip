@@ -7,9 +7,9 @@ import (
 	"os/signal"
 	"path"
 	"syscall"
-	"tellyoumyip/client"
-	"tellyoumyip/server"
-	"tellyoumyip/util"
+	"github.com/9466/tellyoumyip/client"
+	"github.com/9466/tellyoumyip/server"
+	"github.com/9466/tellyoumyip/util"
 	"time"
 )
 
