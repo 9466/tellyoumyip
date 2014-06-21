@@ -49,12 +49,11 @@ func (this *Client) Shutdown() {
 	this.shutdown <- 1
 }
 
-func (this *Client) handle(uri string) error {
-	resp, err := http.PostForm(uri, url.Values{"up": {"true"}})
+func (this *Client) handle(uri string) {
+	_, err := http.PostForm(uri, url.Values{"up": {"true"}})
 	if err != nil {
-		return err
+		this.logger.Println(err)
+	} else {
+		// ok
 	}
-	// debug
-	this.logger.Println(resp)
-	return nil
 }
