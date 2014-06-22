@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
+	"github.com/9466/tellyoumyip/client"
+	"github.com/9466/tellyoumyip/server"
+	"github.com/9466/tellyoumyip/util"
 	"log"
 	"os"
 	"os/signal"
 	"path"
 	"syscall"
-	"github.com/9466/tellyoumyip/client"
-	"github.com/9466/tellyoumyip/server"
-	"github.com/9466/tellyoumyip/util"
 	"time"
 )
 

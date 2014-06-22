@@ -51,10 +51,11 @@ func (this *Client) Shutdown() {
 
 func (this *Client) handle(uri string) {
 	resp, err := http.PostForm(uri, url.Values{"up": {"true"}})
-	defer resp.Body.Close()
 	if err != nil {
 		this.logger.Println(err)
+		return
 	} else {
 		// ok
 	}
+	defer resp.Body.Close()
 }
