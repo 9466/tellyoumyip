@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/9466/daemon"
 	"github.com/9466/tellyoumyip/client"
 	"github.com/9466/tellyoumyip/server"
-	"github.com/9466/tellyoumyip/util"
 	"log"
 	"os"
 	"os/signal"
@@ -76,7 +76,7 @@ func main() {
 
 	// daemon
 	var err error
-	_, err = util.Daemon(1, 0)
+	_, err = daemon.Daemon(1, 0)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
